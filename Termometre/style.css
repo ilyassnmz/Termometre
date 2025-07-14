@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf6f0;
+    color: #2e2e2e;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+    background-color: #1f1a17;
+    color: #fefefe;
+}
+
+.container {
+    max-width: 480px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s;
+}
+
+body.dark-mode .container {
+    background-color: #2a2522;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #ff8c42;
+}
+
+body.dark-mode .heading {
+    color: #ffae63;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#temperatureInput {
+    padding: 14px;
+    font-size: 18px;
+    border: 2px solid #ffc285;
+    border-radius: 10px;
+    background-color: #fffaf4;
+    color: #2e2e2e;
+    transition: all 0.3s;
+}
+
+#temperatureInput:focus {
+    outline: none;
+    border-color: #ff8c42;
+    background-color: #fff;
+}
+
+body.dark-mode #temperatureInput {
+    background-color: #3a302d;
+    color: #fefefe;
+    border-color: #ffae63;
+}
+
+.dropdowns {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ffc285;
+    background-color: #fffaf4;
+    color: #2e2e2e;
+    transition: all 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ff8c42;
+}
+
+body.dark-mode select {
+    background-color: #3a302d;
+    color: #fefefe;
+    border-color: #ffae63;
+}
+
+.dropdowns span {
+    font-size: 22px;
+    color: #aaa;
+}
+
+body.dark-mode .dropdowns span {
+    color: #ccc;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    margin-top: 15px;
+}
+
+body.dark-mode #result {
+    color: #eee;
+}

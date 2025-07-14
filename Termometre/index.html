@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termometre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Termometre</h1>
+
+        <div class="converter">
+            <input type="number" id="temperatureInput" placeholder="Sıcaklık değeri girin">
+            <div class="dropdowns">
+                <select id="fromUnit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                    <option value="rankine">Rankine (°R)</option>
+                    <option value="reaumur">Réaumur (°Ré)</option>
+                    <option value="newton">Newton (°N)</option>
+                </select>
+
+                <span>→</span>
+
+                <select id="toUnit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                    <option value="rankine">Rankine (°R)</option>
+                    <option value="reaumur">Réaumur (°Ré)</option>
+                    <option value="newton">Newton (°N)</option>
+                </select>
+            </div>
+
+            <p id="result">Sonuç: -</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
